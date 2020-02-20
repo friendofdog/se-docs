@@ -116,7 +116,7 @@ Parts of a non-login shell:
 2. `~./bashrc` – used for bash configuration (e.g. aliases)
 
 Sources
-=======
+-------
 
 - https://www.youtube.com/playlist?list=PLBf0hzazHTGMJzHon4YXGscxUvsFpxrZT
 - https://www.youtube.com/watch?v=yIuPu4iLcY4
