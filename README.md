@@ -11,6 +11,7 @@ Bash
 
 C
 - [Pointers](./c/pointers.md)
+- [Strings](./c/strings.md)
 
 Linux
 - [Ecosystem](./linux/ecosystem.md)
