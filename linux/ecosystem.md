@@ -38,3 +38,4 @@ Sources
 4. https://unix.stackexchange.com/questions/87625/what-is-difference-between-user-space-and-kernel-space
 5. http://man7.org/linux/man-pages/man2/intro.2.html
 6. http://man7.org/linux/man-pages/man2/syscalls.2.html
+7. https://stackoverflow.com/questions/20823371/what-is-the-difference-between-the-functions-of-the-exec-family-of-system-calls

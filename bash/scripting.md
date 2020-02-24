@@ -1,5 +1,5 @@
-Bash
-====
+Bash Scripting
+==============
 
 Bash scripts allow you to execute bash commands from a file, like one would from the command line. Script takes the `.sh` file extension, but still require a declaration of interpreter in the script itself (see below).
 
