@@ -20,13 +20,17 @@ Fork and exec examples
 ----------------------
 
 When you run `ls -l` in a terminal window, this happens:
+
 - The parent process (in this case, a bash shell) is copied (fork)
 - The copy (the child process) is replaced by `ls`
 - The child process runs and then dies on completion (exec)
 
 What about `exec ls -l`?
-- The same thing happens, except the child process replaces the parent (not the forked copy)
-- Therefore, the parent process is die (in this case, the terminal window will close)
+
+- The current process dies and is replaced by the same process with the same pid
+	- *When you `exec`, there is no child process.*
+- Its memory has been wiped out and replaced with a new memory image
+- The process then begins based on the new memory image.
 
 Forked processes inherit `stdin`, `stdout`, and `stderr` from the parent.
 
