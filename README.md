@@ -22,5 +22,5 @@ Linux
 - [User management](./linux/users.md)
 
 Networking
-- [Transport protocols](./networking/dns.md)
+- [DNS](./networking/dns.md)
 - [Transport protocols](./networking/transport.md)
