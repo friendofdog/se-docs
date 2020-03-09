@@ -1,7 +1,9 @@
 Processes
 =========
 
-A process is just a piece of running code which is executing some task. Every process has...
+A process is just a piece of running code which is executing some task. It is active, in that it has been loaded into the system RAM and is being processed by the CPU.
+
+Every process has...
 - a process ID, `pid`
 - a parent ID, `ppid`
 
@@ -16,6 +18,11 @@ The init process is the only one without a parent. Its `pid` is `1` and `ppid` i
 
 There are a number of init systems, including `systemd`, `upstart`, `sysvinit`, `launchd`, `bash`, and `openrc`. Ubuntu 18.04 uses bash.
 
+Exec processes
+--------------
+
+Exec processes replace an existing process image with a new image. The current process dies and is replaced by the same process with the same PID; there is no child process created. The process will begin again starting at the top of the new image.
+
 Fork and exec examples
 ----------------------
 
@@ -25,14 +32,14 @@ When you run `ls -l` in a terminal window, this happens:
 - The copy (the child process) is replaced by `ls`
 - The child process runs and then dies on completion (exec)
 
+Forked processes inherit `stdin`, `stdout`, and `stderr` from the parent.
+
 What about `exec ls -l`?
 
-- The current process dies and is replaced by the same process with the same pid
-	- *When you `exec`, there is no child process.*
-- Its memory has been wiped out and replaced with a new memory image
-- The process then begins based on the new memory image.
+- Whatever is running in the current process stops, and the process runs `ls -l`
+- The terminal window in which this is run will most likely close
 
-Forked processes inherit `stdin`, `stdout`, and `stderr` from the parent.
+Note that `exec` is not a direct evocation of an exec process, it's a shell command which triggers an exec process somewhere down the line
 
 Process signals
 ---------------
@@ -51,6 +58,12 @@ Ending processes with `kill`, in order or severity:
 - `kill -9 [pid]` sends `SIGKILL`
 	- This gives the process no chance to clean up before shutdown
 	- Can never fail
+
+Useful commands in Linux
+------------------------
+
+- `ps -e | wc -l` count all processes
+- `ps -e | grep Chrome` list all processes related to Chrome
 
 Sources
 -------
