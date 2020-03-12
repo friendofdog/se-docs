@@ -42,3 +42,10 @@ UDP vs. TCP
   - Downside is that data is not always sent out immediately (bad for things like VOIP)
 - Better error detection: while not technically superior to UDP, checksum is mandatory for IPv4 and IPv6
 - Good for file transfer, remote access (SSH), or where delivery acknowledgement is needed
+
+Sources
+-------
+
+- https://www.youtube.com/playlist?list=PLBOh8f9FoHHhvO5e5HF_6mYvtZegobYX2
+- https://www.youtube.com/watch?v=Vdc8TCESIg8
+- https://www.diffen.com/difference/TCP_vs_UDP
