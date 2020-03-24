@@ -27,8 +27,16 @@ Index
 - [Transport protocols](./networking/transport.md)
 
 ### Python
+- [\*args and \**kwargs](./python/args-kwargs.md)
 - [Bitwise operators](./python/bitwise.md)
 - [Data types](./python/data-types.md)
+- [Files](./python/files.md)
+- [Lambda](./python/lambda.md)
+- [List comprehension](./python/list-comprehension.md)
+- [List manipulation](./python/list-manipulation.md)
+- [Loops](./python/loops.md)
+- [Map and filter](./python/map-filter.md)
+- [Resources](./python/resources.md)
 - [String interpolation](./python/string-interpolation.md)
 
   #### Modules
