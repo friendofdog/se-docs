@@ -3,13 +3,11 @@ SSH
 
 When examining the public key of a remote server, something like the following will be returned:
 
-`[size in bits] [encoding]:[fingerprint] [location]`
+`[size in bits] [encoding]:[fingerprint] [comment] [something printed by program evoking this info]`
 
 Example:
 
 `2048 SHA256:CxIuAEc3SZThY9XobrjJIHN61OTItAU0Emz0v/+15wY kevinkee@Kevins-MacBook-Pro.local (RSA)`
-
-
 
 Sources
 -------

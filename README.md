@@ -6,21 +6,33 @@ A collection of documentation and notes pertaining to systems engineering.
 Index
 -----
 
-Bash
+### Bash
 - [Bash scripting](./bash/scripting.md)
 
-C
+### C
 - [Pointers](./c/pointers.md)
 - [Strings](./c/strings.md)
 
-Linux
+### Linux
 - [Ecosystem](./linux/ecosystem.md)
 - [Filesystem](./linux/filesystem.md)
 - [Processes](./linux/processes.md)
-- [Standard File Streams](./linux/file-stream.md)
-- [Systemd](./linux/Systemd.md)
+- [Standard file streams](./linux/file-stream.md)
+- [Systemd](./linux/systemd.md)
 - [User management](./linux/users.md)
 
-Networking
+### Networking
 - [DNS](./networking/dns.md)
+- [SSH](./networking/ssh.md)
 - [Transport protocols](./networking/transport.md)
+
+### Python
+- [Bitwise operators](./python/bitwise.md)
+- [Data types](./python/data-types.md)
+- [String interpolation](./python/string-interpolation.md)
+
+  #### Modules
+  - [Socket](./python/modules/socket.md)
+
+### Misc
+- [Hash functions](./hash-functions.md)
