@@ -39,8 +39,8 @@ Index
 - [Resources](./python/resources.md)
 - [String interpolation](./python/string-interpolation.md)
 
-  #### Modules
-  - [Socket](./python/modules/socket.md)
+#### Python modules
+- [Socket](./python/modules/socket.md)
 
 ### Misc
 - [Hash functions](./hash-functions.md)
