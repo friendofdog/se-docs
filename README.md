@@ -37,6 +37,7 @@ Index
 - [Loops](./python/loops.md)
 - [Map and filter](./python/map-filter.md)
 - [Resources](./python/resources.md)
+- [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
 
 #### Python modules
