@@ -40,6 +40,9 @@ Index
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
 
+#### [Classes](./python/classes/index.md)
+- [Attributes and methods](./python/classes/attributes-methods.md)
+
 #### Python modules
 - [Socket](./python/modules/socket.md)
 
