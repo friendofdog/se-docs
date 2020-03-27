@@ -12,6 +12,7 @@ Sections
 
 - [Attributes and methods](./python/classes/attributes-methods.md)
 - [Inheritance and polymorphism](./python/classes/inheritance-polymorphism.md)
+- [Special methods](./python/classes/special-methods.md)
 
 Sources
 -------

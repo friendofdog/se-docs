@@ -32,6 +32,7 @@ Index
 - [Classes](./python/classes/index.md)
   - [Attributes and methods](./python/classes/attributes-methods.md)
   - [Inheritance and polymorphism](./python/classes/inheritance-polymorphism.md)
+  - [Special methods](./python/classes/special-methods.md)
 - [Data types](./python/data-types.md)
 - [Files](./python/files.md)
 - [Lambda](./python/lambda.md)
