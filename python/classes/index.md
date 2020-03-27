@@ -7,6 +7,12 @@ Although the concepts are distinct, the words "class" and "object" are sometimes
 
 The upper case namespace is reserved for classes in Python. As a convention, class names are written in `CamelCase` (whereas function names are lower case and `underscore_separated`).
 
+Sections
+--------
+
+- [Attributes and methods](./python/classes/attributes-methods.md)
+- [Inheritance and polymorphism](./python/classes/inheritance-polymorphism.md)
+
 Sources
 -------
 

@@ -29,6 +29,9 @@ Index
 ### Python
 - [\*args and \**kwargs](./python/args-kwargs.md)
 - [Bitwise operators](./python/bitwise.md)
+- [Classes](./python/classes/index.md)
+  - [Attributes and methods](./python/classes/attributes-methods.md)
+  - [Inheritance and polymorphism](./python/classes/inheritance-polymorphism.md)
 - [Data types](./python/data-types.md)
 - [Files](./python/files.md)
 - [Lambda](./python/lambda.md)
@@ -39,9 +42,6 @@ Index
 - [Resources](./python/resources.md)
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
-
-#### [Classes](./python/classes/index.md)
-- [Attributes and methods](./python/classes/attributes-methods.md)
 
 #### Python modules
 - [Socket](./python/modules/socket.md)
