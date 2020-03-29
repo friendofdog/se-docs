@@ -40,6 +40,7 @@ Index
 - [List manipulation](./python/list-manipulation.md)
 - [Loops](./python/loops.md)
 - [Map and filter](./python/map-filter.md)
+- [Packages and modules](./python/packages-modules.md)
 - [Resources](./python/resources.md)
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)

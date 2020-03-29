@@ -74,6 +74,29 @@ some_dog = Dog('Doge')
 some_dog.bark(4)
 ```
 
+Another more complex example:
+
+```
+class Account:
+    def __init__(self,name,num):
+        self.owner = name
+        self.balance = num
+
+    def __str__(self):
+        return f"{self.owner} has {self.balance} in account"
+
+    def deposit(self,num):
+        self.balance += num
+        print(f"New balance: {self.balance}")
+
+    def withdraw(self,num):
+        if self.balance - num <0:
+            return f"Withdraw exceeds current balance, {self.balance}"
+        else:
+            self.balance -= num
+            print(f"New balance: {self.balance}")
+```
+
 Sources
 -------
 
