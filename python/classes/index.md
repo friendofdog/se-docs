@@ -10,9 +10,9 @@ The upper case namespace is reserved for classes in Python. As a convention, cla
 Sections
 --------
 
-- [Attributes and methods](./python/classes/attributes-methods.md)
-- [Inheritance and polymorphism](./python/classes/inheritance-polymorphism.md)
-- [Special methods](./python/classes/special-methods.md)
+- [Attributes and methods](./attributes-methods.md)
+- [Inheritance and polymorphism](./inheritance-polymorphism.md)
+- [Special methods](./special-methods.md)
 
 Sources
 -------
