@@ -7,11 +7,15 @@ Index
 -----
 
 ### Bash
-- [Bash scripting](./bash/scripting.md)
+- [Scripting](./bash/scripting.md)
+- [Startup scripts](./bash/startup.md)
 
 ### C
 - [Pointers](./c/pointers.md)
 - [Strings](./c/strings.md)
+
+### Git
+- [Useful commands](./git/commands.md)
 
 ### Linux
 - [Ecosystem](./linux/ecosystem.md)
@@ -42,12 +46,14 @@ Index
 - [Loops](./python/loops.md)
 - [Map and filter](./python/map-filter.md)
 - [Packages and modules](./python/packages-modules.md)
+- [PyCharm](./python/pycharm.md)
 - [Resources](./python/resources.md)
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
 
 #### Python modules
 - [Socket](./python/modules/socket.md)
+- [OS](./python/modules/os.md)
 
 ### Misc
 - [Hash functions](./hash-functions.md)
