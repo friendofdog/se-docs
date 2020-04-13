@@ -64,3 +64,4 @@ Sources
 -------
 
 - https://docs.python.org/3/library/exceptions.html
+- https://docs.python.org/3.3/tutorial/errors.html
