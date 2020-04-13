@@ -20,6 +20,7 @@ Index
 ### Linux
 - [Ecosystem](./linux/ecosystem.md)
 - [Filesystem](./linux/filesystem.md)
+- [Hash functions](./linux/hash-functions.md)
 - [Processes](./linux/processes.md)
 - [Standard file streams](./linux/file-stream.md)
 - [Systemd](./linux/systemd.md)
@@ -54,6 +55,3 @@ Index
 #### Python modules
 - [Socket](./python/modules/socket.md)
 - [OS](./python/modules/os.md)
-
-### Misc
-- [Hash functions](./hash-functions.md)
