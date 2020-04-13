@@ -22,6 +22,8 @@ There are four types of encoding:
 3. ecdsa
 4. ed25519
 
+If you use rsa, 4096 size is a good size for today. 2048 might be max supported in Japan or with some older systems.
+
 ecdsa is quite common and is the best option for current applications. ed25519 is technically better but is not universally supported.
 
 Generating keys
