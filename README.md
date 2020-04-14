@@ -51,6 +51,7 @@ Index
 - [Resources](./python/resources.md)
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
+- [Version control](./python/version-control.md)
 
 #### Python modules
 - [Socket](./python/modules/socket.md)
