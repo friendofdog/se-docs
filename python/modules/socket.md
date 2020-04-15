@@ -1,5 +1,5 @@
-Python `socket` Module
-======================
+`socket` Module
+===============
 
 `import socket`
 

@@ -1,5 +1,5 @@
-OS Module
-=========
+`os` Module
+===========
 
 Useful functions
 ----------------
