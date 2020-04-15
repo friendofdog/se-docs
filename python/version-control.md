@@ -12,6 +12,8 @@ alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 ```
 
+However, note that this might cause bugs in some applications. For example, the above aliases will cause `pip install` to install global packages in a `venv` [virtual environment](./modules/venv.md).
+
 Sources
 -------
 

@@ -54,5 +54,6 @@ Index
 - [Version control](./python/version-control.md)
 
 #### Python modules
-- [Socket](./python/modules/socket.md)
-- [OS](./python/modules/os.md)
+- [socket](./python/modules/socket.md)
+- [os](./python/modules/os.md)
+- [venv](./python/modules/venv.md)
