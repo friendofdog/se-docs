@@ -40,6 +40,11 @@ alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 ```
 
+Package management
+------------------
+
+Packages installed using `pip` will be specific to the VE. To make these packages available outside the VE `pip freeze > requirements.txt`. Running `pip install -r requirements.txt` in another VE will install the relevant packages.
+
 Support module: `virtualenvwrapper`
 -----------------------------------
 
