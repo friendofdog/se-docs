@@ -21,6 +21,7 @@ Index
 - [Ecosystem](./linux/ecosystem.md)
 - [Filesystem](./linux/filesystem.md)
 - [Hash functions](./linux/hash-functions.md)
+- [Named / bind](./linux/named.md)
 - [Processes](./linux/processes.md)
 - [Standard file streams](./linux/file-stream.md)
 - [Systemd](./linux/systemd.md)

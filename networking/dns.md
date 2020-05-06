@@ -9,6 +9,27 @@ DNS is a binary protocol (as opposed to http, which is a text protocol). For any
 
 [UDP](transport.md#udp) is more conventional for DNS servers. `dig` will send a UDP packet to port 53.
 
+Name servers
+------------
+
+A name server can be a caching or authoritative. These serve different functions, depending on the intention of a DNS query and where it is coming from.
+
+See also: [Linux/named](../linux/named.md)
+
+### Caching name server
+
+A caching name server performs the DNS queries which a system makes, caching the results in memory. It is the "preferred DNS" in a given network (as we prefer that queries go here rather than, for example, an ISP).
+
+Some sites might need to contact dozens of domains to load properly, so caching locally can reduce load time significantly. This also helps with applications which does a lot of DNS lookup, such as an email spam filter.
+
+Answers given by caching name servers are generally not authoritative, as they are just storing info which was gathered from authoritative sources.
+
+### Authoritative name server
+
+An authoritative name server is a Start of Authority (SOA) for queries about a local domain. It answers queries from both local and remote networks.
+
+In the context of a DNS lookup for an external website, an authoritative name server would be found at an ISP as opposed to a business or home network.
+
 Lookup process
 --------------
 
@@ -81,3 +102,6 @@ Sources
 - https://roadmap.sh/guides/dns-in-one-picture
 - https://www.youtube.com/playlist?list=PLBOh8f9FoHHhvO5e5HF_6mYvtZegobYX2
 - https://www.ietf.org/rfc/rfc1035.txt
+- https://en.wikipedia.org/wiki/BIND
+- https://en.wikipedia.org/wiki/SOA_record#Sample_SOA_record_in_BIND_syntax
+- https://geekflare.com/linux-server-local-dns-caching/
