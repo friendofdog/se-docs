@@ -6,7 +6,7 @@ Concepts
 
 A unit test (a.k.a. test case) is a test run on a small block of code, like a method or a class. The purpose is to determine if it does what it is supposed to do.
 
-A test runner is the application that runs the tests. For example, `unittest` and `pytest` are two common Python test runners.
+A test runner is the application that runs the tests. For example, unittest and [pytest](#pytest) are two common Python test runners.
 
 A test suite is a number of tests that are run together. It usually consists of several classes from several different units. The suite is agnostic to the test runner which is operating its member units.
 
@@ -30,6 +30,25 @@ Unit test design
 - A test should run independently of external factors, such as environment and run order.
 - Do not call one test with another. Every test should be autonomous. If a generated object needs to be passed to a test, create a dummy object.
 - A unit test should be simple: easy to write and readable. You should not have to debug something used for debugging.
+
+Pytest
+------
+
+### Fixtures
+
+Fixtures cannot be called directly. They are typically accessed using a parameter in the test function. For example,
+
+```
+def test_some_function(some_fixture):
+    ...
+```
+
+... is okay; but the following would not be okay:
+
+```
+def test_some_function():
+    some_var = some_fixture()
+```
 
 Sources
 -------
