@@ -15,6 +15,7 @@ Index
 - [Strings](./c/strings.md)
 
 ### Git
+- [Permissions](./git/permissions.md)
 - [Useful commands](./git/commands.md)
 
 ### Linux
