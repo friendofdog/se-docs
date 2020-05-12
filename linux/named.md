@@ -1,4 +1,4 @@
-Bind / named
+BIND / named
 ============
 
 BIND is the most widely used DNS server software and the de-facto standard for Linux systems. "Named" is commonly used interchangeably with "BIND", but named is in fact the daemon used by BIND while BIND is the package name.
@@ -8,7 +8,7 @@ Files and directories
 
 Below are the default locations for files and directories used by named.
 
-`/etc/named.conf`: Main configuration file, which declares zones handled by this DNS server.
+`/etc/named.conf`: Main configuration file, which declares zones handled by this DNS server. On Ubuntu 18.04, this file is located at `/etc/bind`.
 
 `/var/named`: For zone files. When a zone file location is declared, it is done so relative to this directory. Can be overwritten in the config file.
 
@@ -62,6 +62,14 @@ zone "." in {
 `forward`: `first` will forward query before attempting to resolve them using root name servers. `always` will forward query with no subsequent at resolving on root name servers (useful with firewalls).
 
 `notify`: `no` prevents other name servers from being informed when changes are made to the zone data or when the name server is restarted.
+
+To disable forwarding, include the following:
+
+```
+recursion no;
+additional-from-auth no;
+additional-from-cache no;
+```
 
 ### zone
 
