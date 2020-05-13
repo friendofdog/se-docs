@@ -9,10 +9,14 @@ Index
 ### Bash
 - [Scripting](./bash/scripting.md)
 - [Startup scripts](./bash/startup.md)
+- [Trap](./bash/trap.md)
 
 ### C
 - [Pointers](./c/pointers.md)
 - [Strings](./c/strings.md)
+
+### Docker
+- [Docker](./docker/docker.md)
 
 ### Git
 - [Permissions](./git/permissions.md)
