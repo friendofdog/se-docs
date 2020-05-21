@@ -55,7 +55,7 @@ zone "." in {
 
 ### options
 
-`directory`: Specifies working directory for named, and is the base directory for relative path references. Must be given as an absolute path. Default is `/var/named`.
+`directory`: Specifies working directory for named, and is the base directory for relative path references. Must be given as an absolute path. Default is `/var/named`. This directory must be writable by the current user!
 
 `forwarders`: The name server to which queries should be forwarded if they cannot be resolved directly. Must be an IP address.
 
@@ -81,6 +81,17 @@ additional-from-cache no;
 `file`: Path to zone file. Path is relative to `directory`.
 
 `masters`: Used with slave zones, specifies name server where the zone should be transferred. Must be IP address.
+
+Permissions
+-----------
+
+The working directory must be writable by the user running the process, and the user must either own the directory or be part of the group which owns it. If write permissions are not set, named will return an error indicating so; after that, it will check for ownership and return the relevant error if that does not check out.
+
+In addition, the user must have access to priviliged ports. If not, named will still run but will produce an error indicating that port 53 is not accessible.
+
+One would expect that when running named as a root user, ownership would not be an issue. Root-level priviliges are utilised when starting up named, but these are dropped shortly after initialisation (save for access to priviliged ports and the ability to set process resource limits).
+
+A user can be set using the `-u` option. The stated user will be set after named completes priviliged operations.
 
 Sources
 -------
