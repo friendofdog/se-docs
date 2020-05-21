@@ -24,7 +24,8 @@ Index
 
 ### Linux
 - [Ecosystem](./linux/ecosystem.md)
-- [Filesystem](./linux/filesystem.md)
+- [File handlers](./linux/file-handlers.md)
+- [Filesystem](./linux/file-system.md)
 - [Hash functions](./linux/hash-functions.md)
 - [Logging](./linux/logging.md)
 - [Named / bind](./linux/named.md)
