@@ -16,6 +16,7 @@ Index
 - [Strings](./c/strings.md)
 
 ### Docker
+- [Bind Mounts and Volumes](./docker/bind-volume.md)
 - [Docker](./docker/docker.md)
 
 ### Git
