@@ -1,5 +1,5 @@
 Systems Engineering - documentation and notes
-============================================
+=============================================
 
 A collection of documentation and notes pertaining to systems engineering.
 
@@ -34,6 +34,7 @@ Index
 - [Standard file streams](./linux/file-stream.md)
 - [Systemd](./linux/systemd.md)
 - [User management](./linux/users.md)
+- [VIM](./linux.vim.md)
 
 ### Networking
 - [DNS](./networking/dns.md)
@@ -60,6 +61,7 @@ Index
 - [Resources](./python/resources.md)
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
+- [Testing](./python/testing.md)
 - [Version control](./python/version-control.md)
 
 #### Python modules
