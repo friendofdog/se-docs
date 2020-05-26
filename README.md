@@ -24,8 +24,10 @@ Index
 - [Useful commands](./git/commands.md)
 
 ### Linux
+- [chroot](./linux/chroot.md)
 - [Ecosystem](./linux/ecosystem.md)
 - [File handlers](./linux/file-handlers.md)
+- [File permissions](./linux/file-permissions.md)
 - [Filesystem](./linux/file-system.md)
 - [Hash functions](./linux/hash-functions.md)
 - [Logging](./linux/logging.md)
