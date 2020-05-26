@@ -50,8 +50,16 @@ Support module: `virtualenvwrapper`
 
 This module helps manage workflows while using `venv`, namely in creating and deleting virtual environments and switching between them in development.
 
+Sudo and venv
+-------------
+
+When you use `venv`, it's basically updating the `$PATH` variable to look in the virtual environment `/bin` directory before looking elsewhere when running `python` and similar commands. `sudo`, however, ignores `$PATH`; therefore, it does not cooperate well with virtual environments.
+
+One workaround is to use the full path to the virtual environment Python executable, for example, `sudopy = sudo /project-directory/venv/bin/python`. Unfortunately, the `venv` does not have any apparent way to do this natively.
+
 Sources
 -------
 
 - https://realpython.com/python-virtual-environments-a-primer/
 - https://virtualenvwrapper.readthedocs.io/
+- https://unix.stackexchange.com/questions/83191/how-to-make-sudo-preserve-path

@@ -12,6 +12,12 @@ Useful functions
 
 `os.close()` closes the file.
 
+Managing working directory
+--------------------------
+
+The current working directory can be checked with `os.getcwd()`. It can be changed with `os.chdir()`.
+
+A useful application of this is to set the working directory relative to the current file. For example, path of the file can be attained using `path = os.path.dirname(os.path.realpath(__file__))`. Then the working directory can be set using `os.chdir(path)`.
 
 Sources
 -------
@@ -20,3 +26,4 @@ Sources
 - https://python.readthedocs.io/en/stable/library/os.html
 - https://www.geeksforgeeks.org/python-os-open-method/
 - https://www.tutorialspoint.com/python3/os_open.htm
+- https://note.nkmk.me/en/python-os-getcwd-chdir/
