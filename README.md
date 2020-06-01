@@ -6,6 +6,9 @@ A collection of documentation and notes pertaining to systems engineering.
 Index
 -----
 
+### AWS
+- [CloudFormation](./aws/cloudformation.md)
+
 ### Bash
 - [Scripting](./bash/scripting.md)
 - [Startup scripts](./bash/startup.md)
