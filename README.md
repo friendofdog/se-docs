@@ -43,6 +43,7 @@ Index
 
 ### Networking
 - [DNS](./networking/dns.md)
+- [Load balancing](./networking/load-balance.md)
 - [SSH](./networking/ssh.md)
 - [Transport protocols](./networking/transport.md)
 
