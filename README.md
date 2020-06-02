@@ -20,7 +20,8 @@ Index
 
 ### Docker
 - [Bind Mounts and Volumes](./docker/bind-volume.md)
-- [Docker](./docker/docker.md)
+- [Environment Files and Options](./docker/env-files.md)
+- [Permissions](./docker/permissions.md)
 
 ### Git
 - [Permissions](./git/permissions.md)
@@ -50,6 +51,7 @@ Index
 ### Python
 - [\*args and \**kwargs](./python/args-kwargs.md)
 - [Bitwise operators](./python/bitwise.md)
+- [Command line arguments](./python/cla.md)
 - [Classes](./python/classes/index.md)
   - [Attributes and methods](./python/classes/attributes-methods.md)
   - [Inheritance and polymorphism](./python/classes/inheritance-polymorphism.md)
