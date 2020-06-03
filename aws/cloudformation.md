@@ -20,21 +20,77 @@ This identifies the capabilities of the template. The only accepted value is `20
 
 #### Resources
 
-Contains definitions of AWS resources you want to create, and specifies Properties needed for that resource. A resource declaration begins with a string which specifies logical name for resource.
+Contains a list of resource objects. Each resource object is declared using a logical name. Attributes are children of that logical name and are themselves objects. `Type` is a required attribute, and it defines the type of AWS resource being created. For example:
 
-A list of resources types is available at https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+```yaml
+Resources:
+  SomeBucket:
+    Type: AWS::S3::Bucket
+```
 
-`Ref` is a notable declaration. It takes an object name and returns the value of that object. A typical use case is to point to another declared resource (e.g. an application might use `Ref` to point to a database).
+`Properties` specifies additional information about the resource and is required more often than not. For example, an EC2 instance needs `ImageId` and `InstanceType` and would likely need `SecurityGroups`, `UserData`, and so on.
+
+Upon creation, every resource gets a generated physical name based on the its logical name, the stack name, and a unique ID. When `Ref` [returns an reference](#intrinsic-functions), the reference is this physical name.
+
+A list of resources types is available at https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html.
 
 #### Parameters
 
-Used to declare values that can be passed to the template on stack creation. Good for sensitive stuff that you do not want stored in template (e.g. passwords).
+Used to declare values that can be passed to the template on stack creation. This is typically where you would specify sensitive information (e.g. passwords) or things which are specific to application or configuration (e.g. domain name, instance type).
+
+A parameter object contains attributes which define the parameter's value and constraints on that value. The only required attribute is `Type`, and this can be a `String`, `Number`, or an AWS-specific type.
+
+Other attributes of parameter objects can restrict length of input, make a description, set allowed patterns, and so on. All parameters are required. If you want to make one "optional", use `Default` to set default value. For sensitive information, consider settings `NoEcho` to `true`; this way, the returned value will be masked behind asterisks.
 
 #### Mappings
-Used to declare values that will be evaluated in a similar manner to a switch or lookup table statement. For example, selecting a different image based on region or architecture type
+
+Used to declare values that will be evaluated according to specified conditions (in a similar manner to a switch or lookup table statement). For example, the `ImageId` of an EC2 instance differs accross regions – using a `US-East` image on a Tokyo server would cause stack creation to fail.
+
+While it is possible to use [parameters](#parameters) to elicit `ImageId`, that would not be practical as the user would have to look it up. It is easier to use mappings, as below:
+
+```yaml
+"Mappings": {
+  "RegionMap": {
+    "us-east-1": {
+      "AMI": "ami-76f0061f"
+    },
+    "ap-northeast-1": {
+      "AMI": "ami-8e08a38f"
+    }
+  }
+}
+"Resources": {
+  "Ec2Instance": {
+    "Properties": {
+      "ImageId": {
+        "Fn::FindInMap": [
+          "RegionMap",
+          {
+            "Ref": "AWS::Region"
+          },
+          "AMI"
+        ]
+      }
+    }
+  }
+}
+```
+
+In this example, `AWS::Region` is a pseudo parameters whose value returned as the region code where the stack is being created. (As such, the value is not evaluated until stack creation.)
 
 #### Outputs
-Defines custom values returned by cfn-describe-stacks command and in Console Outputs tab after stack is created. Analogous to a STDOUT capture for a POSIX process.
+
+Defines custom values returned by `cfn-describe-stacks` command and in Console Outputs tab after stack is created. It is analogous to a `STDOUT` capture for a POSIX process, except you can define whatever you want outputted based on what happened during stack creation.
+
+### Intrinsic functions
+
+`Ref` takes the logical name of a parameter or resource. Using a parameter will return that parameter's value; using a resource will return a reference to that resource. One use case is declaring a resource in `Parameters` and using `Ref` to get a reference to it in `Resources`.
+
+`Fn::Join` concatinates a set of values into a single value, separated by a delimiter. For example, `!Join [ ":", [ a, b, c ] ]` evaluates to `"a:b:c"`. A use case is setting the value of a property to a multiline bash script or when part of a string needs to be evaluated.
+
+`Fn::GetAtt` returns the value of an attribute from a resource in the template. For example, if you have a `AWS::S3:Bucket` resource, `myBucket`, the function `Fn::GetAtt: [ "myBucket", "DomainName" ]` would get the `DomainName` attribute of the `myBucket` object.
+
+`Fn::FindInMap` returns the value corresponding to keys in a two-level map that is declared in the [`Mappings` section](#mappings).
 
 Stacks
 ------
@@ -73,8 +129,8 @@ Regarding input parameters, only key names are logged; parameter values are not.
 VPC endpoints
 -------------
 
-CloudFormation can be configured to use interface VPC endpoints for access, restricting network traffic between the VPC and CloudFormation to the AWS network. No need for Internet gateway, a NAT device, or a virtual private gateway. VPC endpoints are not required, but are recommended.
+CloudFormation can be configured to use interface VPC endpoints for access, restricting network traffic between the VPC and CloudFormation to the AWS network. No need for Internet gateway, a NAT device, or a virtual private gateway.
 
-The service which CloudFormation uses for VPC endpoints is PrivateLink.
+The service which CloudFormation uses for VPC endpoints is PrivateLink, a tool that enables you to privately access AWS CloudFormation APIs by using private IP addresses.
 
 See https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint for more details.
