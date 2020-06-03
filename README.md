@@ -10,6 +10,7 @@ Index
 - [CloudFormation](./aws/cloudformation.md)
 
 ### Bash
+- [Curl](./bash/curl.md)
 - [Scripting](./bash/scripting.md)
 - [Startup scripts](./bash/startup.md)
 - [Trap](./bash/trap.md)
