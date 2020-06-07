@@ -23,6 +23,7 @@ Index
 - [Bind Mounts and Volumes](./docker/bind-volume.md)
 - [Environment Files and Options](./docker/env-files.md)
 - [Permissions](./docker/permissions.md)
+- [Port exposure and publishing](./docker/port.md)
 
 ### Git
 - [Permissions](./git/permissions.md)
