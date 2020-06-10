@@ -8,6 +8,8 @@ Index
 
 ### AWS
 - [CloudFormation](./aws/cloudformation.md)
+- [Elastic Compute Cloud (EC2)](./aws/ec2.md)
+- [Identity and Access Management (IAM)](./aws/iam.md)
 
 ### Bash
 - [Curl](./bash/curl.md)
