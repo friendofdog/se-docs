@@ -10,6 +10,7 @@ Index
 - [CLI - common commands](./aws/cli.md)
 - [CloudFormation](./aws/cloudformation.md)
 - [Elastic Compute Cloud (EC2)](./aws/ec2.md)
+- [Elastic Load Balancing](./aws/elb.md)
 - [Identity and Access Management (IAM)](./aws/iam.md)
 
 ### Bash
