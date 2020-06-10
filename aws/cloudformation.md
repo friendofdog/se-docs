@@ -8,7 +8,7 @@ Templates are the blueprints for provisioning AWS resources. They are read by Cl
 
 Valid file formats include `.json`, `.yaml`, `.template`, or `.txt`. These files are stored in an S3 bucket. (You can choose templates on your computer, but these are automatically put in S3.)
 
-Resources in template must be present and available to CloudFormation, regardless of whether they are AWS resources or ones defined elsewhere in the template.
+Resources in template must be present and available to CloudFormation, regardless of whether they are AWS resources, [third-party](#cloudformation-command-line-interface), or ones defined elsewhere in the template.
 
 ### Parts of a template
 
@@ -84,7 +84,7 @@ Defines custom values returned by `cfn-describe-stacks` command and in Console O
 
 ### Intrinsic functions
 
-`Ref` takes the logical name of a parameter or resource. Using a parameter will return that parameter's value; using a resource will return a reference to that resource. One use case is declaring a resource in `Parameters` and using `Ref` to get a reference to it in `Resources`.
+`Ref` takes the logical name of a parameter or resource. Using a parameter will return that parameter's value; using a resource will return a reference to that resource. One use case is declaring a resource in `Parameters` and using `Ref` to get a reference to it in `Resources`. See https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html.
 
 `Fn::Join` concatinates a set of values into a single value, separated by a delimiter. For example, `!Join [ ":", [ a, b, c ] ]` evaluates to `"a:b:c"`. A use case is setting the value of a property to a multiline bash script or when part of a string needs to be evaluated.
 
@@ -97,7 +97,7 @@ Stacks
 
 A stack is a single unit of related resources, provisioned according to a template. When a is created, updated, and deleted, it is done so in the stack (not directly).
 
-When a stack fails to build, AWS rolls back changes and deletes any created resources. `CREATE_FAIL` status in Events tab shows you where build failed
+When a stack fails to build, AWS rolls back changes and deletes any created resources. `CREATE_FAIL` status in Events tab shows you where build failed. To avoid failing builds due to template errors, use `aws cloudformation validate-template` to check.
 
 Change sets
 -----------
@@ -107,6 +107,19 @@ Change sets are used to create changes to resources already present in a stack. 
 You get to review changes before they go through. However, this check does not indicate whether the change will be successful.
 
 Depending on the resource and properties being updated, an update might interrupt or replace an existing resource. For example, if you update a database you might lost everything in that database.
+
+Updating
+--------
+
+Some resources, such as AMI, are immutable and require a complete replacement of resources if changed in an update. This will result in some downtime while CloudFormation creates new resources with the updated properties, and then links them to the stack. It will also mean that the instance ID and application URL of the instance in the stack will change too. The old resources will be removed after the new ones are ready.
+
+Changing the instance type (e.g. upgrade from `t1.micro` to `m1.small`, which use the same AMI) will not change the instance ID. However, it will change the public IP address. Elastic IP will be updated by CloudFormation to ensure that the Elastic IP address is correctly bound after the instance restarts.
+
+[Todo: write something about what happens if you're using autoscaling groups instead of EC2 instance resources]
+
+### Change sets
+
+Change sets allow you to preview how proposed changes to a stack might impact your running resources.
 
 Permissions
 -----------
@@ -134,3 +147,16 @@ CloudFormation can be configured to use interface VPC endpoints for access, rest
 The service which CloudFormation uses for VPC endpoints is PrivateLink, a tool that enables you to privately access AWS CloudFormation APIs by using private IP addresses.
 
 See https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint for more details.
+
+CloudFormation Command Line Interface
+-------------------------------------
+
+This is a tool for developing and testing AWS and third-party resources, and registering them for use in AWS CloudFormation.
+
+Despite the name "CloudFormation Command Line Interface", this is a completely different thing from [managing CloudFormation using the AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/index.html).
+
+Sources
+-------
+
+- https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/updating.stacks.walkthrough.html
