@@ -7,6 +7,7 @@ Index
 -----
 
 ### AWS
+- [CLI - common commands](./aws/cli.md)
 - [CloudFormation](./aws/cloudformation.md)
 - [Elastic Compute Cloud (EC2)](./aws/ec2.md)
 - [Identity and Access Management (IAM)](./aws/iam.md)
