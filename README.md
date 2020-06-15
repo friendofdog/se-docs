@@ -12,6 +12,7 @@ Index
 - [Elastic Compute Cloud (EC2)](./aws/ec2.md)
 - [Elastic Load Balancing](./aws/elb.md)
 - [Identity and Access Management (IAM)](./aws/iam.md)
+- [Virtual Private Cloud(VPC)](./aws/vpc.md)
 
 ### Bash
 - [Curl](./bash/curl.md)
@@ -46,7 +47,7 @@ Index
 - [Standard file streams](./linux/file-stream.md)
 - [Systemd](./linux/systemd.md)
 - [User management](./linux/users.md)
-- [VIM](./linux.vim.md)
+- [VIM](./linux/vim.md)
 
 ### Networking
 - [DNS](./networking/dns.md)
