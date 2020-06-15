@@ -76,7 +76,8 @@ Index
 - [Resources](./python/resources.md)
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
-- [Testing](./python/testing.md)
+- [Testing](./python/testing/testing.md)
+  - [Pytest](./python/testing/pytest.md)
 - [Version control](./python/version-control.md)
 
 #### Python modules

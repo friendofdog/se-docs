@@ -31,25 +31,6 @@ Unit test design
 - Do not call one test with another. Every test should be autonomous. If a generated object needs to be passed to a test, create a dummy object.
 - A unit test should be simple: easy to write and readable. You should not have to debug something used for debugging.
 
-Pytest
-------
-
-### Fixtures
-
-Fixtures cannot be called directly. They are typically accessed using a parameter in the test function. For example,
-
-```
-def test_some_function(some_fixture):
-    ...
-```
-
-... is okay; but the following would not be okay:
-
-```
-def test_some_function():
-    some_var = some_fixture()
-```
-
 Sources
 -------
 
