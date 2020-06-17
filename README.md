@@ -85,3 +85,11 @@ Index
 - [socket](./python/modules/socket.md)
 - [os](./python/modules/os.md)
 - [venv](./python/modules/venv.md)
+
+#### Ruby
+- [Basics](./ruby/basics.md)
+- [Block / proc / lambda](./ruby/block-proc-lambda.md)
+- [Comparison operators](./ruby/comparison-operators.md)
+- [Map / collect](./ruby/map.md)
+- [Methods](./ruby/methods.md)
+- [Symbols](./ruby/symbols.md)
