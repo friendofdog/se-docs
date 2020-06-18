@@ -89,6 +89,7 @@ Index
 #### Ruby
 - [Basics](./ruby/basics.md)
 - [Block / proc / lambda](./ruby/block-proc-lambda.md)
+- [Classes](./ruby/classes.md)
 - [Comparison operators](./ruby/comparison-operators.md)
 - [Map / collect](./ruby/map.md)
 - [Methods](./ruby/methods.md)
