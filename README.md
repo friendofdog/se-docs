@@ -93,4 +93,5 @@ Index
 - [Comparison operators](./ruby/comparison-operators.md)
 - [Map / collect](./ruby/map.md)
 - [Methods](./ruby/methods.md)
+- [Modules](./ruby/modules.md)
 - [Symbols](./ruby/symbols.md)
