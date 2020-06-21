@@ -29,7 +29,7 @@ puts "THIS IN LOWER".downcase
 ```ruby
 good_var_name = ''
 badVarName = ''
-$veryBadName = ''
+$veryBadName = '' # this would be a global variable
 ```
 
 ### comments
