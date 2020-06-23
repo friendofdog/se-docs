@@ -95,3 +95,4 @@ Index
 - [Methods](./ruby/methods.md)
 - [Modules](./ruby/modules.md)
 - [Symbols](./ruby/symbols.md)
+- [Variables](./ruby/variables.md)
