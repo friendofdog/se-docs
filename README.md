@@ -56,7 +56,6 @@ Index
 - [Transport protocols](./networking/transport.md)
 
 ### Python
-- [\*args and \**kwargs](./python/args-kwargs.md)
 - [Bitwise operators](./python/bitwise.md)
 - [Command line arguments](./python/cla.md)
 - [Classes](./python/classes/index.md)
@@ -78,6 +77,7 @@ Index
 - [String interpolation](./python/string-interpolation.md)
 - [Testing](./python/testing/testing.md)
   - [Pytest](./python/testing/pytest.md)
+- [Variable-length arguments](./python/variable-length-args.md)
 - [Version control](./python/version-control.md)
 
 #### Python modules
