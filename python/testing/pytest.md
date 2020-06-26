@@ -90,7 +90,36 @@ def simple_fixture(request):
 some_num = 5
 ```
 
+Parameters
+----------
+
+Parameters can be used to pass arguments to functions and check the result by an expected value. This can be done multiple times with different sets of args and expected values.
+
+The below example tests a `get_square()` function twice, checking that the square of the provided numbers is returned:
+
+```python
+def get_square(num):
+    return math.sqrt(num)
+
+@pytest.mark.parametrize("num, sqrt", [(25, 5), (36, 6)])
+def test_get_square(num, sqrt):
+    square_root = get_square()
+    assert square_root == sqrt
+```
+
+You can also check that a function fails under certain conditions, using `pytest.param()`. The below tests checks that `get_square()` fails to return 4 when getting the square root of 36:
+
+```python
+@pytest.mark.parametrize("num, sqrt", [
+    (25, 5), pytest.param(36, 4, marks=pytest.mark.xfail)
+])
+def test_get_square(num, sqrt):
+    square_root = math.sqrt(num)
+    assert square_root == sqrt
+```
+
 Sources
 -------
 
 - https://docs.pytest.org/en/stable/fixture.html
+- https://docs.pytest.org/en/stable/parametrize.html
