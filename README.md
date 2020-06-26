@@ -12,6 +12,7 @@ Index
 - [Elastic Compute Cloud (EC2)](./aws/ec2.md)
 - [Elastic Load Balancing](./aws/elb.md)
 - [Identity and Access Management (IAM)](./aws/iam.md)
+- [Botocore and Boto3](./aws/boto.md)
 - [Virtual Private Cloud(VPC)](./aws/vpc.md)
 
 ### Bash
