@@ -50,6 +50,7 @@ Index
 
 ### Networking
 - [DNS](./networking/dns.md)
+- [HTTP methods](./networking/http-methods.md)
 - [Load balancing](./networking/load-balance.md)
 - [REST](./networking/rest.md)
 - [SSH](./networking/ssh.md)
