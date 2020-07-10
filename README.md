@@ -58,6 +58,7 @@ Index
 
 ### Python
 - [Bitwise operators](./python/bitwise.md)
+- [Context managers](./python/context-manager.md)
 - [Command line arguments](./python/cla.md)
 - [Classes](./python/classes/index.md)
   - [Attributes and methods](./python/classes/attributes-methods.md)
