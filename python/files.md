@@ -18,10 +18,12 @@ And finally line three
 
 Upon reading the file, Python will continue to have file open until `close()` is evoked. To get around this, the file can be opened as a variable:
 
-```
+```python
 with open('somefile.txt') as another_file:
-  print(another_file.read())
+    print(another_file.read())
 ```
+
+\* For more information on `with`, see [context managers](./context-manager.md#the-with-statement).
 
 Read / write modes of `open`
 ----------------------------
@@ -34,9 +36,9 @@ Read / write modes of `open`
 
 For example, to append a line to an existing file:
 
-```
+```python
 with open('somefile.txt', mode='a') as another_file:
-  another_file.write('\nThis is another line')
+    another_file.write('\nThis is another line')
 ```
 
 `seek()` is useful when appending to files. You can append content to a text file, for example, at the beginning by using `seek(0)` before appending.

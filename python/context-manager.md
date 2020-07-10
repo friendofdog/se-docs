@@ -54,6 +54,29 @@ with File("some-document.txt", "r") as f:
     print(data)
 ```
 
+contextlib
+----------
+
+Because an object needs at least the built-in types `__enter__` and `__exit__` to be used as a context manager, some objects cannot be used as such on their own. In these situations, the decorator `@contextlib.contextmanager` can be used to define a factory function without explicitly defining a class with `__enter__` and `__exit__`.
+
+For example:
+
+```python
+import contextlib
+
+@contextlib.contextmanager
+def open_the_file(path):
+    f = open(path)
+    try:
+        data = f.read()
+        yield data
+    finally:
+        f.close()
+
+with open_the_file("some-document.txt") as file_data:
+    print(file_data)
+```
+
 Sources
 -------
 
@@ -61,3 +84,4 @@ Sources
 - https://docs.python.org/3/reference/datamodel.html#context-managers
 - https://www.geeksforgeeks.org/context-manager-in-python/
 - https://docs.python.org/3/library/stdtypes.html#typecontextmanager
+- https://docs.python.org/3/library/contextlib.html
