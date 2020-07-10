@@ -54,6 +54,19 @@ The contents of a `PUT` request are stored under the request URI. Therefore, the
 
 \* `POST` requests are only cacheable when they include [explicit freshness information](https://tools.ietf.org/html/rfc7234#section-4.2.1). In practice, `POST` requests are not often cached.
 
+Status code definitions
+-----------------------
+
+When there is a response to a HTTP method call, it will contain a status code adhering to a status code definition. There are too many to list, but the [Wikipedia article](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) gives a straightforward explanation.
+
+There are give classes, each encompassing a family of responses:
+
+- 1xx informational response – the request was received, continuing process
+- 2xx successful – the request was successfully received, understood, and accepted
+- 3xx redirection – further action needs to be taken in order to complete the request
+- 4xx client error – the request contains bad syntax or cannot be fulfilled
+- 5xx server error – the server failed to fulfil an apparently valid request
+
 Sources
 -------
 
@@ -61,3 +74,4 @@ Sources
 - https://restfulapi.net/rest-put-vs-post/
 - https://developer.mozilla.org/en-US/docs/Glossary/Idempotent
 - https://developer.mozilla.org/en-US/docs/Glossary/safe
+- https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
