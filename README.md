@@ -80,6 +80,7 @@ Index
 - [String interpolation](./python/string-interpolation.md)
 - [Testing](./python/testing/testing.md)
   - [Pytest](./python/testing/pytest.md)
+  - [Unittest](./python/testing/unittest.md)
 - [Variable-length arguments](./python/variable-length-args.md)
 - [Version control](./python/version-control.md)
 
