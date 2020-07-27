@@ -42,6 +42,7 @@ Index
 - [File system](./linux/file-system.md)
 - [Hash functions](./linux/hash-functions.md)
 - [Logging](./linux/logging.md)
+- [Make](./linux/make.md)
 - [Named / bind](./linux/named.md)
 - [Processes](./linux/processes.md)
 - [Systemd](./linux/systemd.md)
