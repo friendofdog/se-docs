@@ -75,6 +75,7 @@ Index
 - [Map and filter](./python/map-filter.md)
 - [Packages and modules](./python/packages-modules.md)
 - [PyCharm](./python/pycharm.md)
+- [Regex](./python/regex.md)
 - [Resources](./python/resources.md)
 - [Scope](./python/scope.md)
 - [String interpolation](./python/string-interpolation.md)
