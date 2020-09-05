@@ -63,7 +63,7 @@ Index
 - [Command line arguments](./python/cla.md)
 - [Classes](./python/classes/index.md)
   - [Attributes and methods](./python/classes/attributes-methods.md)
-  - [Inheritance and polymorphism](./python/classes/inheritance-polymorphism.md)
+  - [Inheritance](./python/classes/inheritance.md)
   - [Special methods](./python/classes/special-methods.md)
 - [Data types](./python/data-types.md)
 - [Error and exception handling](./python/error.md)
