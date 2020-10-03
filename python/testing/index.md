@@ -6,7 +6,7 @@ Concepts
 
 A unit test (a.k.a. test case) is a test run on a small block of code, like a method or a class. The purpose is to determine if it does what it is supposed to do.
 
-A test runner is the application that runs the tests. For example, unittest and [pytest](#pytest) are two common Python test runners.
+A test runner is the application that runs the tests. For example, unittest and pytest are two common Python test runners.
 
 A test suite is a number of tests that are run together. It usually consists of several classes from several different units. The suite is agnostic to the test runner which is operating its member units.
 
@@ -18,6 +18,8 @@ Best practices
 The Single Responsibility Principle states that there should only be one reason why a method would need to be changed. If a method both evaluates and prints a report, for example, it would have two reasons to change and would violate the SRP.
 
 Inversion of Control is the separation of decision-making code from action code. If a method makes too many assumptions about some internal functionality or evaluation, that assumptive code should be separated according to IoC.
+
+Test interfaces, not implementation. Testing implementation would be, for example, testing a private class method. The problem is that the private method alone is not indicative of the way the class works. Someone could re-work the class with no regard for the private method and the test would still pass. Testing interface would be instead testing the class, or a part of the class, which relies on the private method.
 
 Unit test design
 ----------------
