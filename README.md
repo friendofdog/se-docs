@@ -131,7 +131,8 @@ Things to add
   - subpackages and importing
   - operators
     - e.g. walrus
-  - generators and yield
+  - creating a generator using `with: yield`
+    - `@contextlib` decorator
   - built-in methods:
     - open()
     - property(get, set)
