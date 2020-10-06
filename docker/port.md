@@ -6,7 +6,7 @@ By default, a Docker container is not exposed to any environment outside of itse
 Exposing ports
 --------------
 
-Container ports can be exposed either using `EXPOSE` in the Dockerfile or `--expose` in runtime. `--expose` is more versitile, in that it can be used with ranges (e.g. `--expose=2000:3000`), and it will also overwrite anything declared with `EXPOSE`. For this reason, `EXPOSE` is sometimes used to merely demonstrate intent or serve as a default.
+Container ports can be exposed either using `EXPOSE` in the [Dockerfile](./dockerfile.md) or `--expose` in runtime. `--expose` is more versitile, in that it can be used with ranges (e.g. `--expose=2000:3000`), and it will also overwrite anything declared with `EXPOSE`. For this reason, `EXPOSE` is sometimes used to merely demonstrate intent or serve as a default.
 
 Regardless of the method used, exposing a container port alone does not mean that it can be accessed from the outside. For this to happen, exposed ports must published.
 
