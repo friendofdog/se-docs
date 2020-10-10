@@ -62,6 +62,8 @@ Index
 - [HTTP methods](./networking/http-methods.md)
 - [Load balancing](./networking/load-balance.md)
 - [REST](./networking/rest.md)
+- [Security](./networking/security/index.md)
+  - [OAuth](./networking/security/oauth.md)
 - [SSH](./networking/ssh.md)
 - [Transport protocols](./networking/transport.md)
 
