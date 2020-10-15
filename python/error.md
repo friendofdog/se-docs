@@ -3,7 +3,7 @@ Error and Exception Handling
 
 If an error is encountered in Python, the script stops and nothing further can happen. If there is a piece of code where errors might be expected, the below is a way to handle them.
 
-```
+```python
 try:
     # this will fail because some_int is a string, and you can't add str and int
     some_int = input("Enter a number")
@@ -20,7 +20,7 @@ else:
 
 You can specify errors by type for `except` to catch. For example, the above code would result in a `TypeError`. The below is how `except` would only catch `TypeError`.
 
-```
+```python
 except TypeError:
     print("TypeError encountered")
 ```
@@ -29,7 +29,7 @@ A full list of built-in error types can be found on [Python documentation](https
 
 To run a block of code regardless of whether an error is encountered or not, use `finally`. This does not work independently of `except`, and in fact requires `except` to function.
 
-```
+```python
 result = 10
 
 try:
@@ -44,7 +44,7 @@ finally:
 
 This sort of error handling works well for a `while` loop.
 
-```
+```python
 def ask_for_int():
     while True:
         try:

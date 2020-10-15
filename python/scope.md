@@ -15,7 +15,7 @@ When a variable is called, Python will look for it in the below order.
 - B: build-in (Python)
   Names pre-assigned in the build-in name module (`open`, `range`, `SyntaxError`, etc.)
 
-```
+```python
 # squishybears.py
 
 name = "Pierre"
@@ -45,7 +45,7 @@ Global variables
 
 Global variables are declared at the top (non-indented) level in a script (or imported in a module). To change a global variable's value inside a function, need to call `global` followed by variable name within the function. The function will then operate on the global variable instead of a local one.
 
-```
+```python
 # global
 name = "Wuzwuz"
 

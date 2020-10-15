@@ -3,7 +3,7 @@ Special (Magic/Dunder) Methods
 
 By default, if you try to print an object it will just show the memory location of that object.
 
-```
+```python
 class Book():
 
     def __init__(self,title,author,pages):
@@ -18,7 +18,7 @@ print(book) # returns memory location
 
 There are built-in methods which return user-specified data when certain functions call an object. Among these are `__str__` and `__len__`.
 
-```
+```python
 class Book():
 
     ...
@@ -38,7 +38,7 @@ print(len(book)) # returns length from __len__
 
 Another such method is `__del__`, which is called when the instance of an object is deleted using `del`. Note that `__del__` uses print() while `__str__` and `__len__` use return (by convention; you could just return something).
 
-```
+```python
 class Book():
 
     ...

@@ -8,7 +8,7 @@ For loops
 
 If you do not want to utilise the items in a list, it is common practice to use `_` to iterate:
 
-```
+```python
 for _ in 'Hello world':
   print('Iterating over anonymous letter')
 ```
@@ -17,7 +17,7 @@ for _ in 'Hello world':
 
 Tuples inside a list can be unpacked while looping through the containing list:
 
-```
+```python
 e = [(1,2),(3,4),('cat','dog')]
 for a,b in e:
     print(a,b)
@@ -27,7 +27,7 @@ for a,b in e:
 
 You can access keys and values (and both) in a dictionary by using the fuctions `items()`, `keys()`, and `values()`.
 
-```
+```python
 d = {'one':10,'two':'b','three':0.5}
 
 # displays keys and values
@@ -63,7 +63,7 @@ Useful functions
 
 `range(begin,length,step)` creates a length which can be iterated over.
 
-```
+```python
 for num in range(0,11,2):
     print(num)
     # 0
@@ -76,14 +76,14 @@ for num in range(0,11,2):
 
 `enumerate()` gives every item in a list an index. Items become tuples, with index being at position 0.
 
-```
+```python
 for index, letter in enumerate('somestring'):
     print(index, letter)
 ```
 
 `zip()` zips together two or more lists (like a zipper on a jacket).
 
-```
+```python
 list1 = [1,2,3]
 list2 = ['a','b','c']
 
@@ -98,21 +98,21 @@ for item in zip(list1,list2):
 
 Check for letter in strong:
 
-```
+```python
 'd' in 'dog'
 # True
 ```
 
 Check for key in dictionary:
 
-```
+```python
 'key' in {'key':123}
 # True
 ```
 
 Check for value in dictionary:
 
-```
+```python
 d = {'somekey':345}
 
 345 in d.values()

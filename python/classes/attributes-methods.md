@@ -14,7 +14,7 @@ A.k.a. "class object attributes". These are attributes which will always apply t
 
 A class attribute can be referenced either on `self` or on the class name.
 
-```
+```python
 class Dog():
 
     species = 'mammal'
@@ -28,7 +28,7 @@ class Dog():
 
 These are attributes which are specific to an instance of a class. They are declared using the `__init__` method ([see below](#__init__-method)).
 
-```
+```python
 class Dog():
 
     def __init__(self,name="Doge"):
@@ -46,7 +46,7 @@ Functions inside a class call are called "methods". They are defined inside the 
 
 The `self` keyword represents the instance of the object. Attributes can be attached to the class by attaching them to self: `self.attr = 'abcd'`. (`self` can technically be any variable name you want, but conventionally it should be "self".)
 
-```
+```python
 class SomeClass():
 
     def __init__(self, param1, param2):
@@ -61,7 +61,7 @@ class SomeClass():
 
 Class methods need to be evoked on the class. It is the exact same thing as evoking a function on a build-in object (like a list or string).
 
-```
+```python
 class Dog():
 
     def __init__(self,name):
@@ -76,7 +76,7 @@ some_dog.bark(4)
 
 Another more complex example:
 
-```
+```python
 class Account:
     def __init__(self,name,num):
         self.owner = name

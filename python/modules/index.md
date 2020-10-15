@@ -6,14 +6,14 @@ Modules
 
 Modules are Python scripts which are called and used by other Python scripts. Example module import:
 
-```
+```python
 # ./mymodule.py
 
 def say_hello():
     print("Hello")
 ```
 
-```
+```python
 #./myscript.py
 from mymodule import hello
 
@@ -29,7 +29,7 @@ Packages serve the same purpose as modules, but are structured in a folder hiera
 
 Below is an example of how modules could be organised into a package.
 
-```
+```python
 /
     mainscript.py
 
@@ -47,7 +47,7 @@ Each folder in a package must contain a `__init__.py` file, which lets Python kn
 
 Indexes are constructed using the `__all__` variable. Say a package contained only the modules `foo.py` and `bar.py`. The index would look like the following.
 
-```
+```python
 __all__ = ["foo","bar"]
 ```
 
@@ -56,7 +56,7 @@ Example: creating a package of classes
 
 One way to import everything in a folder is to assemble everything in the `__init__.py` file and import it in one go. For example, below is an instance of classes being stored in a single folder and imported into a script (without importing anything – like functions – which might exist outside the classes).
 
-```
+```python
 /
     main.py
 
@@ -70,14 +70,14 @@ One way to import everything in a folder is to assemble everything in the `__ini
         __init__.py
 ```
 
-```
+```python
 # ./main.py
 
 # grabs everything present in ./classes/__init__.py
 from classes import *
 ```
 
-```
+```python
 # ./classes/__init__.py
 
 # grabs classes from every file in ./classes/

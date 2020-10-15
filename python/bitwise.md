@@ -29,4 +29,4 @@ Sources
 -------
 
 - https://wiki.python.org/moin/BitwiseOperators
-- https://en.wikipedia.org/wiki/Two's_complement
+- [https://en.wikipedia.org/wiki/Two's_complement](https://en.wikipedia.org/wiki/Two&#39;s_complement)

@@ -77,6 +77,8 @@ Index
   - [Attributes and methods](./python/classes/attributes-methods.md)
   - [Inheritance](./python/classes/inheritance.md)
   - [Special methods](./python/classes/special-methods.md)
+- Data structures
+  - [Lists](./python/data-structures/list.md)
 - [Data types](./python/data-types.md)
 - [Decorators](./python/decorators.md)
 - [Environment variables](./python/environment-variables.md)
@@ -84,11 +86,9 @@ Index
 - [Files](./python/files.md)
 - [Finders and loaders](./python/finders-loaders.md)
 - [Lambda](./python/lambda.md)
-- [List comprehension](./python/list-comprehension.md)
-- [List manipulation](./python/list-manipulation.md)
 - [Loops](./python/loops.md)
 - [Map and filter](./python/map-filter.md)
-- Modules
+- [Modules](./python/modules/index.md)
   - [docker](./python/docker.md)
   - [os](./python/modules/os.md)
   - [socket](./python/modules/socket.md)

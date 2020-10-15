@@ -6,7 +6,7 @@ Map
 
 `map(function,[args])` runs every supplied argument through the stated function, returning a list.
 
-```
+```python
 def square(num):
     return num**2
 
@@ -25,7 +25,7 @@ Filter
 
 `filter(function,[args])` returns whatever args the called function evaluates as `True` or which return a non-`False` value.
 
-```
+```python
 def checkeven(num):
     return num%2 == 0
 

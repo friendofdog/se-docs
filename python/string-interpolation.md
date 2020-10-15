@@ -28,7 +28,7 @@ Where...
 
 For example,
 
-```
+```python
 num = 100/777
 print('100 divided by 777 is {n:1.10f}.'.format(num))
 ```
@@ -36,13 +36,13 @@ evaluates to `100 divided by 777 is 0.1287001287.`
 
 You can create a sort of table using white space:
 
-```
+```python
 print('{0:8} | {1:8}'.format('Fruit', 'Quantity'))
 print('{0:8} | {1:8}'.format('Apples', 3.))
 print('{0:8} | {1:8}'.format('Oranges', 10))
 ```
 
-```
+```python
 Fruit    | Quantity
 Apples   |      3.0
 Oranges  |       10
@@ -53,14 +53,14 @@ f-strings method
 
 Does the same thing as `.format()` but has simpler syntax.
 
-```
+```python
 n = 'Guy'
 print(f'My name is {n}.')
 ```
 
 Example with float formatting:
 
-```
+```python
 num = 100/777
 print(f'100 divided by 777 is {num:1.10f}.')
 ```
