@@ -6,15 +6,23 @@ List comprehension is a shorthand way of creating a list. It does the same thing
 The syntax is `x for x in list`.
 
 ```python
-string = [hello]
+string = ["hello"]
 mylist = [letter for letter in string]
 # ['h','e','l','l','o']
+```
+
+Items in an ordered list can be converted to a space-separated string by using `*`.
+
+```python
+hello_letters = ["h", "e", "l", "l", "o"]
+print(*hello_letters)
+# h e l l o
 ```
 
 Items in this loop can also be operated on.
 
 ```python
-somelist = [num*2 for num in range(5)]
+somelist = [num * 2 for num in range(5)]
 # [0,2,4,6,8]
 ```
 

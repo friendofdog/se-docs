@@ -6,7 +6,7 @@ Fixtures
 
 Fixture are used to initialise test functions. This might set up services, state, or other operating environments.
 
-A fixture declaration must be done using the `@pytest.fixture` decorator. This is an example of a simple fixture:
+A fixture declaration must be done using the `@pytest.fixture` [decorator](../decorators.md). This is an example of a simple fixture:
 
 ```python
 @pytest.fixture

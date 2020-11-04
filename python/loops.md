@@ -43,20 +43,14 @@ for v in d.values():
     print(v)
 ```
 
-While loops
------------
+Interrupting loops
+------------------
 
-### Break
+`break`: ends closest enclosing loop, ending it entirely
 
-Ends closest enclosing loop, ending it entirely.
+`continue`: jumps to next iteration; goes back to top of closest enclosing loop
 
-### Continue
-
-Jumps to next iteration. Goes back to top of closest enclosing loop.
-
-### Pass
-
-Is basically just a placeholder when you want a loop but don't want it to do anything. Useful to avoid syntax error in empty iteration.
+`pass`: placeholder for when you want a loop but don't want it to do anything; useful to avoid syntax error in empty iteration
 
 Useful functions
 ----------------

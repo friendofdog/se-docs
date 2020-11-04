@@ -89,7 +89,7 @@ Index
 - [Loops](./python/loops.md)
 - [Map and filter](./python/map-filter.md)
 - [Modules](./python/modules/index.md)
-  - [docker](./python/docker.md)
+  - [docker](./python/modules/docker.md)
   - [os](./python/modules/os.md)
   - [socket](./python/modules/socket.md)
   - [venv](./python/modules/venv.md)

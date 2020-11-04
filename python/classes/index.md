@@ -11,7 +11,7 @@ Sections
 --------
 
 - [Attributes and methods](./attributes-methods.md)
-- [Inheritance and polymorphism](./inheritance-polymorphism.md)
+- [Inheritance](./inheritance.md)
 - [Special methods](./special-methods.md)
 
 Sources
