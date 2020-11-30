@@ -1,24 +1,5 @@
-SQL
-===
-
-SQL is a data manipulation language (DML) used for adding, deleting, and modifying data in a database.
-
-Data types
-----------
-
-Data types in SQL can be roughly broken down into seven categories:
-
-1. Numeric: `int`, `tinyint`, `bigint`, `float`, `real`, etc.
-2. Date and time: `Date`, `Time`, `Datetime`, etc.
-3. Character string: `char`, `varchar`, `text`, etc.
-4. Unicode character string: `nchar`, `nvarchar`, `ntext`, etc.
-5. Binary: `binary`, `varbinary`, etc.
-6. Miscellaneous: `clob`, `blob`, `xml`, `cursor`, `table`, etc.
-
-The above list is not exhaustive (or even official). Not all types are supported by all vendors. For example, Oracle does not support `DATETIME` and MySQL does not support `CLOB`. A more complete list can be found at https://www.w3schools.com/sql/sql_datatypes.asp.
-
 Statements
-----------
+==========
 
 There are five basic SQL commands (statements):
 
@@ -33,7 +14,8 @@ These statements can be classified as one of the following:
 - Data definition language (DDL): define, change, or drop data
 - Data manipulation language (DML): read and modify data
 
-### CREATE
+CREATE
+------
 
 `CREATE` is a DDL statement which creates a database, schema, or table.
 
@@ -57,7 +39,8 @@ CREATE TABLE [database_name.][schema_name.]table_name (
 - `column_1` and `column_2` are columns; `column_1` has `NON NULL` so it can't be empty
 - `table_constraints` are contraints which apply to this table
 
-### SELECT
+SELECT
+------
 
 `SELECT` is a DML statement used to construct a query to the database. The returned information from a query is called a "result set".
 
@@ -99,7 +82,8 @@ SELECT COUNT(id) from customers WHERE id > 5 ;
 SELECT DISTINCT country from countries WHERE medal_type = 'gold' ;
 ```
 
-### INSERT
+INSERT
+------
 
 `INSERT` is a DML statement used to add new rows to a table. The syntax is illustrated below, where two rows are being added into a table, `coutries`.
 
@@ -113,16 +97,17 @@ VALUES
 
 It is important the values in the `VALUES` clause line up 1:1 with the specified columns. Also, note that you can add as many rows as you want at a time.
 
-### UPDATE
+UPDATE
+------
 
 `UPDATE` is a DML statement which alters existing data in a table.
 
-### DELETE
+DELETE
+------
 
-
+[write this part]
 
 Sources
 -------
 
 - https://www.sqlservertutorial.net/sql-server-basics/
-- https://www.w3schools.com/sql/sql_datatypes.asp
