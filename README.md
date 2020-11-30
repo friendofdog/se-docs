@@ -3,10 +3,8 @@ Systems Engineering - documentation and notes
 
 A collection of documentation and notes pertaining to systems engineering.
 
-Index
------
-
-### AWS
+AWS
+---
 
 - [CLI - common commands](./aws/cli.md)
 - [CloudFormation](./aws/cloudformation.md)
@@ -16,44 +14,40 @@ Index
 - [Botocore and Boto3](./aws/boto.md)
 - [Virtual Private Cloud(VPC)](./aws/vpc.md)
 
-### Bash
+Bash
+----
 
 - [Curl](./bash/curl.md)
 - [Scripting](./bash/scripting.md)
 - [Startup scripts](./bash/startup.md)
 - [Trap](./bash/trap.md)
 
-### C
+C
+-
 
 - [Pointers](./c/pointers.md)
 - [Strings](./c/strings.md)
 
-### Databases
+Databases
+---------
 
-#### Concepts
-
+- [Index](./database/index.md)
 - [Data consistency models](./database/dcm.md)
 - [Relational vs non-relational](./database/relational-nonrelational.md)
+- Database Management Systems
+  - [NoSQL]
+    - [Firestore](./database/dms/firestore.md)
+    - [MongoDB](./database/dms/mongo.md)
+  - [SQL]
+    - [MySQL](./database/dms/mysql.md)
+    - [PostSQL](./database/dms/postsql.md)
+- Structured Query Language (SQL)
+  - [Data types](./database/sql/data-types.md)
+  - [Operations by example](./database/sql/operations.md)
+  - [Statements](./database/sql/statements.md)
 
-#### Database Management Systems
-
-##### [NoSQL]
-
-- [Firestore](./database/dms/firestore.md)
-- [MongoDB](./database/dms/mongo.md)
-
-##### [SQL]
-
-- [MySQL](./database/dms/mysql.md)
-- [PostSQL](./database/dms/postsql.md)
-
-#### Structured Query Language (SQL)
-
-- [Data types](./database/sql/data-types.md)
-- [Operations by example](./database/sql/operations.md)
-- [Statements](./database/sql/statements.md)
-
-### Docker
+Docker
+------
 
 - [Bind Mounts and Volumes](./docker/bind-volume.md)
 - [Dockerfile](./docker/dockerfile.md)
@@ -61,12 +55,14 @@ Index
 - [Permissions](./docker/permissions.md)
 - [Port exposure and publishing](./docker/port.md)
 
-### Git
+Git
+---
 
 - [Permissions](./git/permissions.md)
 - [Useful commands](./git/commands.md)
 
-### Linux
+Linux
+-----
 
 - [chroot](./linux/chroot.md)
 - [Ecosystem](./linux/ecosystem.md)
@@ -81,7 +77,8 @@ Index
 - [User management](./linux/users.md)
 - [VIM](./linux/vim.md)
 
-### Networking
+Networking
+----------
 
 - [DNS](./networking/dns.md)
 - [HTTP methods](./networking/http-methods.md)
@@ -92,7 +89,8 @@ Index
 - [SSH](./networking/ssh.md)
 - [Transport protocols](./networking/transport.md)
 
-### Python
+Python
+------
 
 - [Bitwise operators](./python/bitwise.md)
 - [Context managers](./python/context-manager.md)
@@ -132,7 +130,8 @@ Index
 - [Variable-length arguments](./python/variable-length-args.md)
 - [Version control](./python/version-control.md)
 
-#### Ruby
+Ruby
+----
 
 - [Basics](./ruby/basics.md)
 - [Block / proc / lambda](./ruby/block-proc-lambda.md)
@@ -145,7 +144,7 @@ Index
 - [Variables](./ruby/variables.md)
 
 Things to add
--------------
+=============
 
 1. Python
 
