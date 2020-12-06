@@ -1,3 +1,6 @@
+Lists
+=====
+
 List comprehension
 ------------------
 
@@ -80,3 +83,8 @@ list = ['a','b','c','d','e']
 list.reverse()
 # ['e','d','c','b','a']
 ```
+
+Sources
+-------
+
+- https://docs.python.org/3/tutorial/datastructures.html

@@ -32,3 +32,21 @@ Unordered collections of unique objects, such as `{'a','b','c'}`
 Boolean
 `bool`
 Logical values indicating either `True` or `False`
+
+Falsy values
+------------
+
+The following values are considered "falsy" (that is, they evaluate to `False`):
+
+- `None`
+- `""` (empty string)
+- `[]` (empty list)
+- `()` (empty tuple)
+- `{}` (empty dict)
+- `set()` (empty set)
+- `b''` (empty byte)
+
+Sources
+-------
+
+- https://www.rockyourcode.com/truthy-and-falsy-values-in-javascript-python-and-clojurescript/

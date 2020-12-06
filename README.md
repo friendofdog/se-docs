@@ -101,6 +101,7 @@ Python
   - [Inheritance](./python/classes/inheritance.md)
   - [Special methods](./python/classes/special-methods.md)
 - Data structures
+  - [Dictionaries](./python/data-structures/dict.md)
   - [Lists](./python/data-structures/list.md)
 - [Data types](./python/data-types.md)
 - [Decorators](./python/decorators.md)
