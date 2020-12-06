@@ -97,6 +97,10 @@ somethingsomethingsomething
 
 - <kbd>.</kbd>: repeat whatever you just did (delete two words, paste something, etc.)
 
+### Combine lines
+
+- <kbd>Shft</kbd> + <kbd>j</kbd>: combine line with following line (or multiple lines, if multiple are selected)
+
 Search and replace
 ------------------
 
@@ -120,3 +124,9 @@ Press <kbd>/</kbd> then enter one of the following:
 
 - `:%s/search/replace/g`: search-replace without confirmation
 - `:%s/search/replace/gc`: search-replace with confirmation
+
+Editor
+------
+
+`:sp filename` for a horizontal split
+`:vsp filename` or `:vs filename` for a vertical split
