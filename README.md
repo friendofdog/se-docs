@@ -61,6 +61,14 @@ Git
 - [Permissions](./git/permissions.md)
 - [Useful commands](./git/commands.md)
 
+JavaScript
+----------
+
+- [Closures](./javascript/closures.md)
+- [Data types](./javascript/data-types.md)
+- [Objects](./javascript/objects.md)
+- [Operations](./javascript/operations.md)
+
 Linux
 -----
 
