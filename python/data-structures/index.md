@@ -1,5 +1,8 @@
-Data types
-==========
+Data structures
+===============
+
+Data types in Python
+--------------------
 
 Integer
 `int`
@@ -32,19 +35,6 @@ Unordered collections of unique objects, such as `{'a','b','c'}`
 Boolean
 `bool`
 Logical values indicating either `True` or `False`
-
-Falsy values
-------------
-
-The following values are considered "falsy" (that is, they evaluate to `False`):
-
-- `None`
-- `""` (empty string)
-- `[]` (empty list)
-- `()` (empty tuple)
-- `{}` (empty dict)
-- `set()` (empty set)
-- `b''` (empty byte)
 
 Sources
 -------
