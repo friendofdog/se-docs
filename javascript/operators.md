@@ -55,7 +55,11 @@ console.log(false === 0)  // → false
 console.log("5" !== 5)    // → true
 ```
 
+`this` operator
+---------------
+
 Sources
 -------
 
 - https://eloquentjavascript.net/01_values.html
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this

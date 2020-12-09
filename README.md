@@ -64,10 +64,14 @@ Git
 JavaScript
 ----------
 
-- [Closures](./javascript/closures.md)
-- [Data types](./javascript/data-types.md)
+- [Data types](./javascript/data-types/index.md)
+  - [Arrays](./javascript/data-types/array.md)
+- [Functions](./javascript/functions/index.md)
+  - [Closures](./javascript/functions/closures.md)
+  - [Function methods](./javascript/functions/methods.md)
 - [Objects](./javascript/objects.md)
 - [Operations](./javascript/operations.md)
+- [Variables](./javascript/variables.md)
 
 Linux
 -----
