@@ -71,6 +71,8 @@ JavaScript
   - [Function methods](./javascript/functions/methods.md)
 - [Objects](./javascript/objects.md)
 - [Operations](./javascript/operations.md)
+- Testing
+  - [Jasmine](./javascript/testing/jasmine.md)
 - [Variables](./javascript/variables.md)
 
 Linux
