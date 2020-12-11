@@ -109,10 +109,32 @@ Testing comparisons
 
 `toBe()` and `toEqual()`
 
+Mocking
+-------
+
+Jasmine associates the word "spy" with mocking. Here are several functions used to spy on objects and properties of objects:
+
+```javascript
+spyOn(obj, methodName)  // → {Spy}
+spyOnAllFunctions(obj)  // → {Object}
+spyOnProperty(obj, propertyName, [accessType])  // → {Spy}
+```
+
+Mocks can be applied pretty much anywhere, such as `beforeEach()` to mock every instance of something or in `it()` to mock only once.
+
+If you wanted to test something which uses `Math.random()`, ideally you do not want to be testing a random number. The following example would install a spy on `Math` which ensures that `random()` returns a value of `5` every time it is called in a given `describe()` call.
+
+```javascript
+beforeEach(() => {
+  spyOn(Math, 'random').and.returnValue(5)
+})
+```
+
 Sources
 -------
 
 - https://jasmine.github.io/2.0/introduction
+- https://jasmine.github.io/api/edge/Spy.html
 - https://stackoverflow.com/questions/57325448/jasmine-when-to-use-tocontain-or-tomatch
 - https://stackoverflow.com/questions/22413009/jasmine-javascript-testing-tobe-vs-toequal
 - https://www.youtube.com/playlist?list=PL_noPv5wmuO9op-OQ22SbHcqFGGHA6iIZ
