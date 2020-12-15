@@ -73,8 +73,10 @@ JavaScript
 - [Objects](./javascript/objects.md)
 - [Operations](./javascript/operations.md)
 - [Standard Built-in Objects](./javascript/sbo.md)
+- [Scope](./javascript/scope.md)
 - Testing
   - [Jasmine](./javascript/testing/jasmine.md)
+- [This](./javascript/this.md)
 - [Variables](./javascript/variables.md)
 
 Linux
