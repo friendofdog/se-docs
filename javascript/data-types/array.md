@@ -9,3 +9,5 @@ Methods
 `splice()`
 
 `includes()`
+
+`push()` vs `unshift()`

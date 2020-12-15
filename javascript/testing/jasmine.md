@@ -36,6 +36,32 @@ describe('some description', () => {
 })
 ```
 
+Setting up tests
+----------------
+
+```javascript
+class Customer {
+  this.name = ""
+}
+
+describe("customer", () => {
+  "use strict"
+
+  beforeEach(() => {
+    this.customer = new Customer()
+  })
+
+  it("should be an instance of Customer", () => {
+    expect(customer).toBeDefined()
+    expect(typeof customer).toBe("Customer")
+  })
+
+  it("should have a name property", () => {
+    expect(customer.name).toBeTruthy()
+  })
+})
+```
+
 Testing arithmatic
 ------------------
 
@@ -138,3 +164,4 @@ Sources
 - https://stackoverflow.com/questions/57325448/jasmine-when-to-use-tocontain-or-tomatch
 - https://stackoverflow.com/questions/22413009/jasmine-javascript-testing-tobe-vs-toequal
 - https://www.youtube.com/playlist?list=PL_noPv5wmuO9op-OQ22SbHcqFGGHA6iIZ
+- https://gist.github.com/traviskaufman/11131303

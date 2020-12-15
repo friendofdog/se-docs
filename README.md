@@ -67,10 +67,12 @@ JavaScript
 - [Data types](./javascript/data-types/index.md)
   - [Arrays](./javascript/data-types/array.md)
 - [Functions](./javascript/functions/index.md)
+  - [Arrow functions](./javascript/functions/arrow.md)
   - [Closures](./javascript/functions/closures.md)
-  - [Function methods](./javascript/functions/methods.md)
+  - [Higher-Order Functions](./javascript/functions/hof.md)
 - [Objects](./javascript/objects.md)
 - [Operations](./javascript/operations.md)
+- [Standard Built-in Objects](./javascript/sbo.md)
 - Testing
   - [Jasmine](./javascript/testing/jasmine.md)
 - [Variables](./javascript/variables.md)

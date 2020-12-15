@@ -1,8 +1,8 @@
-Function Methods
-================
+Standard Built-in Objects
+=========================
 
-Built-in methods
-----------------
+Functions
+---------
 
 ### `apply()`
 
