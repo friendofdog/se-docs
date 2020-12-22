@@ -1,23 +1,67 @@
-Variable-length Arguments
-=========================
+Default arguments
+-----------------
+
+Default arguments are given using the `=` operator. Arguments which have a default must come after those without one.
+
+```python
+# correct
+def foo(a, b=2):
+    return a * b
+
+# incorrect
+def foo(a=2, b):
+    return a * b
+```
+
+It can be dangerous to put set default values directly. Consider the following.
+
+```python
+def foo(a=[]):
+    a.append(5)
+    return a
+
+def bar(a=None):
+    a = a if a is not None else []
+    a.append(5)
+    return a
+```
+
+If `foo()` is called without an argument, the default `[]` will have the default `5` appended to it with every call. `bar()`, because it sets default more carefully, will not behave in this way.
+
+```bash
+>>> foo()
+[5]
+>>> foo()
+[5, 5]
+>>> foo()
+[5, 5, 5]
+
+>>> bar()
+[5]
+>>> bar()
+[5]
+>>> bar()
+[5]
+```
+
+Variable-length arguments
+-------------------------
 
 When a variable name in a function definition is preceeded by a `*` or `**`, it will use any number of arguments supplied when the function is called.
 
-Arguments (\*args)
-------------------
+### Non-keyword arguments (\*args)
 
 Arguments are passed to the function as a list or tuple. They are interpreted as a tuple within the function.
 
 ```python
 def return_sum(*nums):
-    print(nums) # -> (2, 3)
+    print(nums)  # -> (2, 3)
     return sum(nums)
 
-print(return_sum(2, 3)) # -> 5
+print(return_sum(2, 3))  # -> 5
 ```
 
-Keyword arguments (\**kwargs)
------------------------------
+### Keyword arguments (\**kwargs)
 
 Keyword arguments use dictionaries instead of tuples / lists. Values are associated with keys; it does not matter the order they are passed in. Below is an example of passing keyword arguments using named arguments.
 
@@ -48,20 +92,19 @@ class ProduceList:
 
 produce_dict = {'fruit': 'apple'}
 produce_list = ProduceList(**produce_dict)
-print(produce_list.fruit) # -> 'apple'
-print(produce_list.veggie) # -> 'no veggies'
+print(produce_list.fruit)  # -> 'apple'
+print(produce_list.veggie)  # -> 'no veggies'
 ```
 
-Combined usage
---------------
+### Combined usage
 
-It is possible to use the \*args and \*kwargs in combination with each other.
+It is possible to use the \*args and \*kwargs in combination with each other. Non-keyword arguments must come first.
 
 ```python
-def myfunc(**food,*quantities):
+def myfunc(*quantities, **food):
     print(f'I would like {quantities[0]} {food["fruit"]}')
 
-myfunc(fruit='apple',veggie='carrot',1,2,3)
+myfunc(1, 2, 3, fruit='apple', veggie='carrot')
 ```
 
 Sources

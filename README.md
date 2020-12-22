@@ -72,6 +72,7 @@ JavaScript
   - [Higher-Order Functions](./javascript/functions/hof.md)
 - [Objects](./javascript/objects.md)
 - [Operations](./javascript/operations.md)
+- [Polymorphism](./javascript/polymorphism.md)
 - [Standard Built-in Objects](./javascript/sbo.md)
 - [Scope](./javascript/scope.md)
 - Testing
@@ -127,6 +128,7 @@ Python
 - [Files](./python/files.md)
 - [Finders and loaders](./python/finders-loaders.md)
 - [Functions and methods]
+  - [Arguments](./python/arguments.md)
   - [Essential built-in funcitons](./python/essential-functions.md)
   - [Lambda](./python/lambda.md)
 - [Loops](./python/loops.md)
@@ -147,7 +149,6 @@ Python
   - [Pytest](./python/testing/pytest.md)
   - [Unittest](./python/testing/unittest.md)
 - [Type checking](./python/type-checking.md)
-- [Variable-length arguments](./python/variable-length-args.md)
 - [Version control](./python/version-control.md)
 
 Ruby
