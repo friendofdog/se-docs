@@ -68,6 +68,7 @@ JavaScript
   - [Arrays](./javascript/data-types/array.md)
 - [Functions](./javascript/functions/index.md)
   - [Arrow functions](./javascript/functions/arrow.md)
+  - [Classes](./javascript/classes.md)
   - [Closures](./javascript/functions/closures.md)
   - [Higher-Order Functions](./javascript/functions/hof.md)
 - [Objects](./javascript/objects.md)
