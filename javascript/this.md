@@ -26,7 +26,23 @@ Manipulating `this`
 
 ### `bind()` method
 
-`bind()` can be used to bind the value of `this` to an object. For example, you have a function, `getName()`. `getName().bind(Person)` will set the value of `this` to `Person` whenever it is used in `getName()`. See [`bind`](./javascript/sbo.md#bind) for more details.
+`bind()` operates on a function to bind the value of of the function's `this` to an object.
+
+```javascript
+class Person = {
+  constructor
+  name: "Guy",
+  getName: function() {
+    return `My name is ${this.name}`
+  }
+}
+
+const sayName = guy.getName
+
+const boundSayName = sayName.bind(guy)
+```
+
+For example, you have a function, `getName()`. `getName().bind(Person)` will set the value of `this` to `Person` whenever it is used in `getName()`. See [`bind`](./javascript/sbo.md#bind) for more details.
 
 ### Arrow functions
 
