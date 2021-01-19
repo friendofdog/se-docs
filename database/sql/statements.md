@@ -102,10 +102,20 @@ UPDATE
 
 `UPDATE` is a DML statement which alters existing data in a table.
 
+```SQL
+UPDATE countries
+SET iso_code = 'JP', language = 'JA'
+WHERE country_id = 123;
+```
+
 DELETE
 ------
 
-[write this part]
+`DELETE` is a DDL statement which removes existing data in a table. Note, this does not remove the table itself; that is `DROP`.
+
+```SQL
+DELETE FROM countries WHERE country_id=123;
+```
 
 Sources
 -------
