@@ -63,7 +63,7 @@ def findIndexSimple(arr, num):
   return -1
 ```
 
-### O(n log n): linearithmic / quasilinear
+### O(n log n): linearithmic / log linear
 
 This applies to a set of data which is divided using a time complexity of `O(log n)` and then merged using a sub-algorithm with a complexity of `O(n)`. This includes merge srot, heap sort, and quick sort.
 
@@ -121,13 +121,43 @@ def sortArraySelection(arr):
 
 ### O(2ⁿ): exponential
 
+Time complexity growth doubles with each additon to the input data set.
+
+E.g. double recursive search
+
+```python
+def fibonacci(num):
+  if num <= 1
+    return num
+  return fibonacci(num - 2) + fibonacci(num - 1)
+```
+
 ### O(n!): factorial
 
-e.g. traveling salesman
+Time complexity is the product of all positive integers less than or equal to n. To map a few out:
 
+```
+| n | time |
+|---|------|
+| 0 | 1    |
+| 1 | 1    |
+| 2 | 2    |
+| 3 | 6    |
+| 4 | 24   |
+| 5 | 120  |
+```
+
+e.g. recursive call in for loop
+
+```python
+def factorialRuntime(num):
+  for i in range(num):
+    factorialRuntime(i - 1)
+```
 
 Sources
 -------
 
 - https://en.wikipedia.org/wiki/big_o_notation
 - https://www.freecodecamp.org/news/big-o-notation-explained-with-examples/
+- https://jarednielsen.com/big-o-factorial-time-complexity/
