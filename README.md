@@ -28,6 +28,12 @@ C
 - [Pointers](./c/pointers.md)
 - [Strings](./c/strings.md)
 
+Computer science
+----------------
+
+- [Big O](./cs/big-o.md)
+- [Typing](./cs/typing.md)
+
 Databases
 ---------
 
