@@ -32,6 +32,16 @@ Computer science
 ----------------
 
 - [Big O](./cs/big-o.md)
+- [Data structures](./cs/data-structures/index.md)
+  - [Array](./cs/data-structures/array.md)
+  - [Binary search tree](./cs/data-structures/binary-search-tree.md)
+  - [Binary tree](./cs/data-structures/binary-tree.md)
+  - [Graph](./cs/data-structures/graph.md)
+  - [Hash table](./cs/data-structures/hash-table.md)
+  - [Heap](./cs/data-structures/heap.md)
+  - [Linked list](./cs/data-structures/linked-list.md)
+  - [Queue](./cs/data-structures/queue.md)
+  - [Stack](./cs/data-structures/stack.md)
 - [Typing](./cs/typing.md)
 
 Databases
