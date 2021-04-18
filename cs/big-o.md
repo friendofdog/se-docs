@@ -3,7 +3,7 @@ Big O notation
 
 Big O describes the complexity of code using an algebraic expression. It consists of several classifications, which represent how run time increases as input size grows.
 
-Yypically, Big O assumes a worst-case scenario. It is approximate in that it tells you the maximum amount of time (upper limit) required for inputs of a given size.
+Typically, Big O assumes a worst-case scenario. It is approximate in that it tells you the maximum amount of time (upper limit) required for inputs of a given size.
 
 <img src="https://github.com/friendofdog/se-docs/raw/master/img/big-o.jpg" width=500>
 
