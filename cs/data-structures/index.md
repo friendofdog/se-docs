@@ -6,21 +6,21 @@ Index
 
 ### Linear
 
-- [Array](./cs/data-structures/array.md)
-- [Linked list](./cs/data-structures/linked-list.md)
-- [Queue](./cs/data-structures/queue.md)
-- [Stack](./cs/data-structures/stack.md)
+- [Array](./array.md)
+- [Linked list](./linked-list.md)
+- [Queue](./queue.md)
+- [Stack](./stack.md)
 
 ### Trees
 
-- [Binary search tree](./cs/data-structures/binary-search-tree.md)
-- [Binary tree](./cs/data-structures/binary-tree.md)
-- [Heap](./cs/data-structures/heap.md)
+- [Binary search tree](./binary-search-tree.md)
+- [Binary tree](./binary-tree.md)
+- [Heap](./heap.md)
 
 ### Misc
 
-- [Graph](./cs/data-structures/graph.md)
-- [Hash table](./cs/data-structures/hash-table.md)
+- [Graph](./graph.md)
+- [Hash table](./hash-table.md)
 
 Sources
 -------
