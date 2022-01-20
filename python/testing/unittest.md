@@ -1,6 +1,8 @@
 Unittest
 ========
 
+Test method names start with `test_` and should be specifically indicative of what they are testing. For example, `test_find_entry` is not as good as `test_find_entry_in_xlsx_by_id`.
+
 Mocking
 -------
 
@@ -34,4 +36,5 @@ def app():
 Sources
 -------
 
-- https://docs.python.org/3/library/unittest.mock.html
+[^1]: https://realpython.com/python-testing/
+[^2]: https://docs.python.org/3/library/unittest.html
