@@ -42,6 +42,7 @@ Computer science
   - [Linked list](./cs/data-structures/linked-list.md)
   - [Queue](./cs/data-structures/queue.md)
   - [Stack](./cs/data-structures/stack.md)
+- [Testing](./cs/testing.md)
 - [Typing](./cs/typing.md)
 
 Databases
