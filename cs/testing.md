@@ -30,6 +30,12 @@ Principles: [^2]
 
 Tests code and its interaction with external systems (such as a database or external API). Differs from unit testing in that two or more services are joined and assessed in the same test. [^3]
 
+### Functional
+
+Performed on a piece of functionality (as opposed to the entire system, a single method, or group of methods). Tests that said functionality is behaving as expected.
+
+> For any software application, both Unit testing, as well as Integration testing, is very important as each of them employs a unique process to test a software application. But any one or even both cannot replace Functional testing at any point. [^4]
+
 ### System
 
 Performed on an entire build, not just a piece of it (like integration and unit testing). Checks whether software aligns with its stated functional requirements.
@@ -42,7 +48,7 @@ Tests weather software satisfies the requirements of its users. Done by users, c
 
 Tests speed, response time, stability, reliability, scalability, and resource usage. 
 
-Different types of performance testing: [^4]
+Different types of performance testing: [^5]
 - Load testing – Checks the application's ability to perform under anticipated user loads, identifying performance bottlenecks.
 - Stress testing – Tests an application under extreme workloads to see how it handles high traffic or data processing, identifying the breaking point of an application.
 - Endurance testing – Tests that the software can handle the expected load over a long period of time.
@@ -63,7 +69,7 @@ Language-specific
 -----------------
 
 - [Python](../python/testing/index.md)
-- [JavaScript](../javascript/testing.index.md)
+- [JavaScript](../javascript/testing/index.md)
 
 Sources
 -------
@@ -71,4 +77,5 @@ Sources
 [^1]: https://en.wikipedia.org/wiki/Regression_testing
 [^2]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
 [^3]: https://u-tor.com/topic/system-vs-integration
-[^4]: https://www.guru99.com/performance-testing.html
+[^4]: https://www.softwaretestinghelp.com/the-difference-between-unit-integration-and-functional-testing
+[^5]: https://www.guru99.com/performance-testing.html

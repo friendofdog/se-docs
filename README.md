@@ -56,6 +56,9 @@ Databases
     - [Firestore](./database/dms/firestore.md)
     - [MongoDB](./database/dms/mongo.md)
   - [SQL]
+    - Examples
+      - [queries](./database/dms/examples/queries.sql)
+      - [schema](./database/dms/examples/schema.sql)
     - [MySQL](./database/dms/mysql.md)
     - [PostSQL](./database/dms/postsql.md)
 - Structured Query Language (SQL)
