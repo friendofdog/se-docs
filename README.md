@@ -56,15 +56,15 @@ Databases
     - [Firestore](./database/dms/firestore.md)
     - [MongoDB](./database/dms/mongo.md)
   - [SQL]
-    - Examples
-      - [queries](./database/dms/examples/queries.sql)
-      - [schema](./database/dms/examples/schema.sql)
     - [MySQL](./database/dms/mysql.md)
     - [PostSQL](./database/dms/postsql.md)
 - Structured Query Language (SQL)
   - [Data types](./database/sql/data-types.md)
   - [Operations by example](./database/sql/operations.md)
   - [Statements](./database/sql/statements.md)
+  - Examples
+    - [queries](./database/sql/examples/queries.sql)
+    - [schema](./database/sql/examples/schema.sql)
 
 Docker
 ------
@@ -88,11 +88,11 @@ JavaScript
   - [Arrays](./javascript/data-types/array.md)
 - [Functions](./javascript/functions/index.md)
   - [Arrow functions](./javascript/functions/arrow.md)
-  - [Classes](./javascript/classes.md)
+  - [Classes](./javascript/functions/classes.md)
   - [Closures](./javascript/functions/closures.md)
   - [Higher-Order Functions](./javascript/functions/hof.md)
 - [Objects](./javascript/objects.md)
-- [Operations](./javascript/operations.md)
+- [Operators](./javascript/operators.md)
 - [Polymorphism](./javascript/polymorphism.md)
 - [Standard Built-in Objects](./javascript/sbo.md)
 - [Scope](./javascript/scope.md)
@@ -148,10 +148,10 @@ Python
 - [Error and exception handling](./python/error.md)
 - [Files](./python/files.md)
 - [Finders and loaders](./python/finders-loaders.md)
-- [Functions and methods]
-  - [Arguments](./python/arguments.md)
-  - [Essential built-in funcitons](./python/essential-functions.md)
-  - [Lambda](./python/lambda.md)
+- [Functions](./python/functions/index.md)
+  - [Arguments](./python/functions/arguments.md)
+  - [Essential built-in funcitons](./python/functions/essential-functions.md)
+  - [Lambda](./python/functions/lambda.md)
 - [Loops](./python/loops.md)
 - [Modules](./python/modules/index.md)
   - [docker](./python/modules/docker.md)
