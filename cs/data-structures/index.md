@@ -13,7 +13,6 @@ Index
 
 ### Trees
 
-- [Binary search tree](./binary-search-tree.md)
 - [Binary tree](./binary-tree.md)
 - [Heap](./heap.md)
 

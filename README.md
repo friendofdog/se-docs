@@ -34,7 +34,6 @@ Computer science
 - [Big O](./cs/big-o.md)
 - [Data structures](./cs/data-structures/index.md)
   - [Array](./cs/data-structures/array.md)
-  - [Binary search tree](./cs/data-structures/binary-search-tree.md)
   - [Binary tree](./cs/data-structures/binary-tree.md)
   - [Graph](./cs/data-structures/graph.md)
   - [Hash table](./cs/data-structures/hash-table.md)
@@ -133,7 +132,6 @@ Python
 ------
 
 - [Context managers](./python/context-manager.md)
-- [Command line arguments](./python/cla.md)
 - [Coroutines and tasks](./python/coroutine-task.md)
 - [Classes](./python/classes/index.md)
   - [Attributes and methods](./python/classes/attributes-methods.md)
@@ -160,7 +158,6 @@ Python
   - [venv](./python/modules/venv.md)
 - [Operators](./python/operators/index.md)
   - [Bitwise operators](./python/operators/bitwise.md)
-- [Packages and modules](./python/packages-modules.md)
 - [PyCharm](./python/pycharm.md)
 - [Regex](./python/regex.md)
 - [Resources](./python/resources.md)
