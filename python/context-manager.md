@@ -28,9 +28,9 @@ finally:
 Implementing as a class
 -----------------------
 
-A class can be instantiated with a context manager much like it would be with a variable assignment. Two built-in methods will always be present: `__enter__()` and `__exit__(exc_type, exc_val, exc_tb)` (these respectively corrlate with setup and teardown).
+A class can be instantiated with a context manager much like it would be with a variable assignment. Two built-in methods will always be present: `__enter__()` for setup and `__exit__(exc_type, exc_val, exc_tb)` for teardown.
 
-`__enter__` takes no arguments, but `__exit__` has three: `exc_type`, `exc_val`, `exc_tb`. If the runtime context exits due to an exception, these parameters describe what caused this to happen. Otherwise, their value is `None`.
+`__enter__` takes no additional arguments besides `self`, but `__exit__` has three: `exc_type`, `exc_val`, `exc_tb`. If the runtime context exits due to an exception, these parameters describe what caused this to happen. Otherwise, their value is `None`.
 
 Here is a class which can be used with a context manager. In this example, `__exit__` includes simple error handling.
 
@@ -57,7 +57,7 @@ with File("some-document.txt", "r") as f:
 contextlib
 ----------
 
-Because an object needs at least the built-in types `__enter__` and `__exit__` to be used as a context manager, some objects cannot be used as such on their own. In these situations, the decorator `@contextlib.contextmanager` can be used to define a factory function without explicitly defining a class with `__enter__` and `__exit__`.
+Because an object needs at least the built-in types `__enter__` and `__exit__` to be used as a context manager, some objects cannot be used as such on their own. In these situations, the decorator `@contextlib.contextmanager` defines a factory function without explicitly defining a class with `__enter__` and `__exit__`.
 
 For example:
 
