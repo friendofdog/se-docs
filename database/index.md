@@ -4,6 +4,7 @@ Databases
 Concepts
 --------
 
+- [CAP Theorem](./database/cap.md)
 - [Data consistency models](./database/dcm.md)
 - [Relational vs non-relational](./database/relational-nonrelational.md)
 
